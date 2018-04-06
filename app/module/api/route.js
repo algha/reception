@@ -3,7 +3,7 @@ module.exports = function( app ) {
       , router = express.Router()
       , controller = require( './controller' );
 
-    var key = "77a03108d217279bd763b3e2c8b975cbca51f235";/*sha1(Gaaboo0801)*/
+    var key = "";
     var AuthApi = function(req, res, next){
       if (req.query.key === key) {
         next();
